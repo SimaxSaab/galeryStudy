@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 810px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: red;
+  width: 250px;
+ 
+}
+
+.header {
+  display: flex;
+}
+
+.header-title {
+  
+  margin: 25px 0 0 20px;
+}
+
+.image-header {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+img {
+  width: 250px;
+}
