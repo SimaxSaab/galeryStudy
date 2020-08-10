@@ -19,24 +19,26 @@ function createCard(cardObj) {
 
 fetch('https://picsum.photos/v2/list')
   .then(
-    function(response){
+    function (response) {
       return response.json();
     }
   )
   .then(
-    data=>{
+    data => {
       console.log(data);
 
-      let cardList='';
+      let cardList = '';
 
       data.forEach((element, idx) => {
-        if(idx>5 && idx<15)
-        cardList = cardList + createCard(element);
+        if (idx > 5 && idx < 15)
+          cardList = cardList + createCard(element);
       });
 
-      wrapper.innerHTML=cardList;
-      setTimeout(()=>{var msnry = new Masonry( '.wrapper', {
-        // options
-      });}, 2000)
+      wrapper.innerHTML = cardList;
+      setTimeout(() => {
+        var msnry = new Masonry('.wrapper', {
+          // options
+        });
+      }, 2000)
     }
   )

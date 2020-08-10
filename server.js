@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('fs');
+//const fs = require('fs');
 
 const server = express();
 
@@ -15,6 +15,6 @@ server
   //     res.write(html);
   //     res.end();
   //   })
-    
+
   // })
-  .listen(port,()=>{console.log('Run server');});
+  .listen(port, () => { console.log('Run server'); });
